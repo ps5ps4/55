@@ -1,0 +1,363 @@
+<!--
+Copyright (C) 2023-2025 anonymous
+
+This file is part of PSFree.
+
+PSFree is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as
+published by the Free Software Foundation, either version 3 of the
+License, or (at your option) any later version.
+
+PSFree is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>"حسين للألعاب الإلكترونية 🎮9.00🎮</title>
+<style>
+  .location-style {
+  font-size: 48px;   /* حجم كبير وواضح */
+  font-weight: bold; /* يخلي النص أوضح */
+  text-align: center;
+  line-height: 1.8;
+}
+
+  .sub {
+  font-size: 32px;   /* حجم كبير وواضح */
+  line-height: 1.8;  /* يخلي السطور مرتاحة */
+  text-align: center;
+}
+
+
+.phone {
+  direction: ltr;
+  unicode-bidi: plaintext;
+  font-size: 22px;
+  color: #ff004c;
+}
+
+.phone-icon {
+  color: #ff0000;
+  margin-right: 5px;
+}
+.phone {
+  background: rgba(255, 0, 242, 0);
+  padding: 12px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #fa0000;
+  text-align: center;
+  transition: 0.3s;
+}
+
+
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #db0b0b, #01258A);
+      background-image: url('icon0.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    @font-face {
+      font-family: 'logging';
+      src: url('fonts/LiberationMono-Regular.ttf');
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0);
+      backdrop-filter: blur(10px);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      width: 90%;
+      max-width: 700px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    #console {
+      font-family: 'logging', monospace;
+      font-size: 18px;
+      text-align: left;
+      background: rgba(0, 0, 0, 0);
+      padding: 20px;
+      border-radius: 10px;
+      white-space: pre-wrap;
+      height: 300px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    if (window.applicationCache.status === 0) {
+      window.location.replace("cache.html");
+    }
+  </script>
+
+ <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>حسين للألعاب الإلكترونية</title>
+  <meta name="description" content="صفحة ترحيب – حسين للألعاب الإلكترونية" />
+
+  <style>
+    @keyframes emoji-rgb-glow {
+  0%   { filter: drop-shadow(0 0 6px red); }
+  25%  { filter: drop-shadow(0 0 6px orange); }
+  50%  { filter: drop-shadow(0 0 6px lime); }
+  75%  { filter: drop-shadow(0 0 6px cyan); }
+  100% { filter: drop-shadow(0 0 6px red); }
+}
+.rainbow-emoji {
+  display: inline-block;
+  animation: emoji-rgb-glow 2s infinite;
+}
+
+    :root {
+      --border: rgb(0, 195, 255);
+      --txt: #14e4c8;
+    }
+.gini-btn {
+  position: relative;
+}
+
+.gini-btn .install-badge {
+  position: absolute;
+  top: -8px;
+  inset-inline-start: 50%;
+  transform: translateX(50%);
+  background-color: #5fa7c9;
+  color: #51b7bb;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid #f3050500;
+  box-shadow: 0 0 5px rgba(255, 0,ddd 0, 0);
+  line-height: 1;
+  white-space: nowrap;
+  z-index: 1;
+  
+}
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: "Tajawal", system-ui, -apple-system, Segoe UI, Roboto, Arial, "Baloo Bhaijaan 2", sans-serif;
+      color: var(--txt);
+      overflow: auto;
+      background: #ff010100 url('bg.png') center/cover fixed no-repeat;
+    }
+
+    .veil {
+      position: fixed; inset: 0; z-index: -1;
+      background: radial-gradient(900px 900px at 50% 50%, rgba(0,195,255,0.05), rgba(0, 0, 0, 0));
+      backdrop-filter: blur(6px);
+    }
+
+    .wrap { min-height: 100%; display: grid; place-items: center; padding: 24px; }
+
+    .card {
+      position: relative; width: min(880px, 92vw);
+      padding: 48px 28px 32px; border-radius: 28px;
+      background: rgba(0, 0, 0, 0);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(8px) saturate(1.2);
+      text-align: center;
+      box-shadow: 0 0 20px rgb(255, 0, 34);
+    }
+
+    .brand {
+  font-family: 'Noto Color Emoji', 'Baloo Bhaijaan 2', 'Tajawal', sans-serif;
+      font-size: clamp(32px, 6vw, 64px);
+      font-weight: 800; margin: 0 0 10px;
+      background: linear-gradient(90deg,#00e5ff,#00ffff,#00e5ff);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+      text-shadow: 0 0 15px rgb(255, 51, 0);
+    }
+
+    .sub { opacity: .9; margin: 0 0 24px; font-size: 18px; color: #00f7ff; }
+    .addr { margin: -4px 0 18px; font-size: 16px; opacity: .95; }
+    .addr a { color: #ff0000; text-decoration: none; border-bottom: 1px dotted #ff0000; }
+
+    /* التوهج على الصور */
+    .glow-icon {
+      filter: drop-shadow(0 0 6px rgba(0, 200, 255, 0.8));
+      transition: filter 0.3s ease-in-out;
+    }
+    .glow-icon:hover {
+      filter: drop-shadow(0 0 12px rgba(255, 100, 0, 0.95));
+    }
+
+    /* الأرقام */
+    .phones { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin: 18px 0 6px; }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 12px 18px; border-radius: 999px;
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(206, 10, 212, 0.712);
+      font-size: 20px; font-weight: 700; letter-spacing: .5px;
+      color: #00c8ff; text-decoration: none;
+      transition: all .3s ease-in-out;
+      box-shadow: 0 0 10px rgba(0,195,255,.4), 0 0 25px rgba(0,235,255,.2);
+      animation: pulse2s 2s ease-in-out infinite;
+    }
+
+    .pill:hover {
+      box-shadow: 0 0 30px rgba(255,70,0,.8), 0 0 50px rgba(255,120,0,.5);
+      border-color: rgba(255,90,0,.9); color: #ff0000;
+    }
+
+    .pill img { width: 22px; height: 22px; border-radius: 50%; object-fit: contain; }
+
+    /* الأزرار */
+    
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 30px rgba(255,70,0,.8), 0 0 50px rgba(255,120,0,.5);
+      border-color: rgba(255,90,0,.9); color: #ff0202;
+    }
+
+    .btn .icon { width: 22px; height: 22px; display: inline-block; }
+    .btn .icon img { width: 100%; height: 100%; object-fit: contain; border-radius: 50%; }
+
+    /* زر  المنسدل */
+    .btn-menu { cursor: pointer; position: relative; }
+
+    .dropdown {
+      position: absolute; top: 110%; inset-inline-end: 0;
+      background: rgba(0,20,30,.95);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 8px; min-width: 200px;
+      display: none; backdrop-filter: blur(6px);
+    }
+
+    .dropdown a {
+      display: block; padding: 8px 10px; text-decoration: none;
+      color: #00e5ff; font-weight: 700; border-radius: 10px;
+    }
+
+    .dropdown a:hover { background: rgba(214, 214, 214, 0); }
+    .btn-menu.open .dropdown { display: block; }
+
+    /* التوهج */
+    @keyframes pulse2s {
+      0%, 100% {
+        box-shadow: 0 0 10px rgba(0,195,255,.4), 0 0 25px rgba(0,235,255,.2);
+      }
+      50% {
+        box-shadow: 0 0 22px rgba(255, 68, 0, 0.616), 0 0 50px rgba(255, 119, 0, 0);
+      }
+    }
+
+    /* زر رجوع للأعلى */
+    #scrollTopBtn {
+      position: fixed; bottom: 20px; left: 20px; z-index: 99;
+      background: rgba(0,200,255,0.18);
+      border: 1px solid 00cfff;
+      color: #00e5ff;
+      padding: 12px 14px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+      display: none;
+      backdrop-filter: blur(8px);
+      transition: transform .2s ease, box-shadow .2s ease;
+      box-shadow: 0 0 12px rgba(0, 200, 255, 0);
+      animation: pulse2s 3s ease-in-out infinite;
+    }
+
+    #scrollTopBtn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 24px rgba(255,120,0,1);
+    }
+        /* زر رجوع للأعلى */
+    #scrollTopBtn {
+      ...
+    }
+
+    /* ✨ توهج متعدّد الألوان للشعار */
+    @keyframes multi-glow {
+      0%   { filter: drop-shadow(0 0 6px red); }
+      25%  { filter: drop-shadow(0 0 6px orange); }
+      50%  { filter: drop-shadow(0 0 6px yellow); }
+      75%  { filter: drop-shadow(0 0 6px cyan); }
+      100% { filter: drop-shadow(0 0 6px red); }
+    }
+
+    .logo-glow {
+      animation: multi-glow 3s infinite;
+      transition: filter 0.3s ease-in-out;
+    }
+</style>
+
+  </style>
+</head>
+<body>
+
+  <div class="veil"></div>
+
+  <main class="wrap">
+    <section class="card">
+   <h1 style="font-family: 'Baloo Bhaijaan 2', Tajawal, sans-serif; color: #00f5ff; text-shadow: 0 0 12px cyan; font-size: 48px;">
+  <span class="rainbow-emoji">🎮</span>
+  <span style="font-size: 32px;">مرحباً بك</span>
+  <span class="rainbow-emoji">🎮</span>
+</h1>
+</h1>
+<img src="icons/logo.png" alt="حسين للألعاب الإلكترونية" class="logo-glow" style="width: 300px; max-width: 90%; height: auto;">
+
+      <p class="sub">متخصصة بكل ما يخص عالم الألعاب الإلكترونية – بيع وشراء أجهزة، إكسسوارات، كراسي ألعاب، بطاقات شحن، وخدمات سوفتوير.</p>
+ <div class="phones" aria-label="أرقام التواصل">
+        <a class="phone" href="tel:+9647708222300">📞 0770 822 2300</a>
+        <a class="phone" href="tel:+9647836900133">📞 0783 690 0133</a>
+      </div>
+      <p class="addr">
+        النجف الأشرف — شارع الغدير فرات، مقابل كوفي دردشة.
+        <a href="https://goo.gl/maps/5wGJ6tSo3s6SuHNU9" target="_blank">
+          <img src="icons/map.png" class="glow-icon" alt="عرض على الخريطة" style="width: 24px; vertical-align: middle;">
+        </a>
+      </p>
+</main>
+
+   
+
+  <script src="payload.js"></script>
+  <script type="module" src="./alert.mjs"></script>
+</body>
+</html>
